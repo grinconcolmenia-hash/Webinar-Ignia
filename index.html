@@ -216,40 +216,6 @@
   #s6 .hint{ margin-top:auto; font-family:"Poppins",sans-serif; font-weight:600; font-size:21px; }
   #s6 .bad .hint{ color:rgba(192,57,43,0.85); } #s6 .good .hint{ color:rgba(9,86,44,0.75); }
 
-  /* ══ 07 · ECOSISTEMA ══ */
-  #s7 .scrim{ background:
-     radial-gradient(circle at 20% 44%, rgba(18,242,128,0.14), transparent 42%),
-     radial-gradient(circle at 78% 44%, rgba(15,59,254,0.18), transparent 46%),
-     linear-gradient(0deg, rgba(8,12,10,0.62), rgba(8,12,10,0.62)); }
-  #s7 .eco{ position:relative; flex:1; margin-top:64px; min-height:0; }
-  #s7 .zone{ position:absolute; top:0; height:470px; border-radius:26px; padding:22px 30px; }
-  #s7 .zone.a{ left:0; width:560px; border:1.5px dashed rgba(18,242,128,0.5); background:rgba(18,242,128,0.04); }
-  #s7 .zone.b{ left:620px; right:0; border:1.5px dashed rgba(79,139,255,0.55); background:rgba(15,59,254,0.06); }
-  #s7 .zt{ font-family:"Poppins",sans-serif; font-weight:700; font-size:18px; letter-spacing:0.16em; text-transform:uppercase; }
-  #s7 .zone.a .zt{ color:var(--green); } #s7 .zone.b .zt{ color:#7ea6ff; }
-  #s7 .zt small{ font-weight:400; letter-spacing:0.04em; text-transform:none; font-size:20px; color:rgba(255,255,255,0.6); margin-left:10px; }
-  #s7 .brain{ position:absolute; left:280px; top:266px; transform:translate(-50%,-50%); width:250px; height:250px; border-radius:50%; background:radial-gradient(circle at 50% 36%, #1e4130, #0a120d 74%); border:2px solid rgba(18,242,128,0.6); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; z-index:3; box-shadow:0 0 70px rgba(18,242,128,0.35), inset 0 0 60px rgba(18,242,128,0.16); }
-  #s7 .brain svg{ width:64px; height:64px; stroke:var(--green); stroke-width:1.8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-  #s7 .brain .n{ font-family:"Anta",sans-serif; font-size:32px; color:#fff; margin-top:8px; line-height:1.05; }
-  #s7 .brain .d{ font-family:"Poppins",sans-serif; font-size:17px; color:rgba(255,255,255,0.65); margin-top:4px; }
-  #s7 .pulse{ position:absolute; left:280px; top:266px; width:270px; height:270px; border-radius:50%; border:2px solid rgba(18,242,128,0.5); animation:ring 3.4s ease-out infinite; z-index:2; }
-  #s7 .pulse.p2{ animation-delay:1.7s; }
-  #s7 .rail{ position:absolute; left:280px; top:404px; transform:translateX(-50%); white-space:nowrap; z-index:4; font-family:"Poppins",sans-serif; font-weight:600; font-size:18px; color:#fff; background:#13111c; border:1.5px solid rgba(255,255,255,0.28); border-radius:999px; padding:8px 20px; display:flex; align-items:center; gap:10px; }
-  #s7 .rail i{ width:10px; height:10px; border-radius:50%; background:var(--green); box-shadow:0 0 12px var(--green); display:block; }
-  #s7 .node{ position:absolute; top:150px; width:300px; height:232px; border-radius:22px; padding:26px 26px; background:rgba(255,255,255,0.05); backdrop-filter:blur(12px); border:1.5px solid rgba(79,139,255,0.55); box-shadow:0 22px 60px rgba(0,0,0,0.5); z-index:3; display:flex; flex-direction:column; }
-  #s7 .node.n1{ left:680px; } #s7 .node.n2{ left:1040px; } #s7 .node.n3{ left:1400px; right:auto; width:270px; border-color:rgba(18,242,128,0.55); background:rgba(18,242,128,0.07); }
-  #s7 .node .ic{ width:60px; height:60px; border-radius:16px; background:rgba(79,139,255,0.14); border:1.5px solid rgba(79,139,255,0.5); display:flex; align-items:center; justify-content:center; }
-  #s7 .node.n3 .ic{ background:rgba(18,242,128,0.14); border-color:rgba(18,242,128,0.55); }
-  #s7 .node .ic svg{ width:32px; height:32px; stroke:#7ea6ff; stroke-width:2; }
-  #s7 .node.n3 .ic svg{ stroke:var(--green); }
-  #s7 .node .n{ font-family:"Anta",sans-serif; font-size:32px; color:#fff; margin-top:16px; line-height:1.05; }
-  #s7 .node .d{ font-family:"Poppins",sans-serif; font-size:20px; color:rgba(255,255,255,0.68); line-height:1.4; margin-top:8px; }
-  #s7 svg.flow{ position:absolute; inset:0; width:100%; height:100%; overflow:visible; z-index:2; pointer-events:none; }
-  #s7 .flow .f{ fill:none; stroke:#7ea6ff; stroke-width:3.5; stroke-dasharray:12 10; animation:dashflow 3s linear infinite; filter:drop-shadow(0 0 8px rgba(79,139,255,0.6)); }
-  #s7 .flow .back{ fill:none; stroke:var(--green); stroke-width:3.5; stroke-dasharray:12 10; animation:dashflow 4s linear infinite; filter:drop-shadow(0 0 8px rgba(18,242,128,0.6)); }
-  #s7 .loop{ position:absolute; left:50%; top:522px; transform:translateX(-50%); z-index:4; white-space:nowrap; background:#0b1410; border:1.5px solid rgba(18,242,128,0.55); border-radius:999px; padding:14px 34px; font-family:"Poppins",sans-serif; font-size:24px; color:rgba(255,255,255,0.9); box-shadow:0 0 40px rgba(18,242,128,0.2); }
-  #s7 .loop b{ color:var(--green); font-weight:700; }
-
   /* ══ 08 · HERRAMIENTAS ══ */
   #s8 .kit{ flex:1; display:grid; grid-template-columns:560px 1fr; gap:28px; margin-top:38px; min-height:0; }
   #s8 .hub{ position:relative; border-radius:26px; padding:46px 46px; background:linear-gradient(155deg,#0c2a1a,#0a120e); border:1.5px solid rgba(18,242,128,0.5); box-shadow:0 22px 70px rgba(9,86,44,0.3), inset 0 0 120px rgba(18,242,128,0.06); display:flex; flex-direction:column; overflow:hidden; }
@@ -279,11 +245,11 @@
   .divider h2{ font-family:"Anta",sans-serif; font-size:190px; color:#fff; line-height:1; letter-spacing:0.02em; }
   .divider h2 span{ color:var(--green); text-shadow:0 0 70px rgba(18,242,128,0.5); }
   .divider .tagline{ font-family:"Tilt Neon",sans-serif; font-size:46px; color:rgba(255,255,255,0.66); margin-top:26px; }
-  #s9 .dice{ position:absolute; right:190px; top:50%; transform:translateY(-50%); width:420px; height:420px; z-index:6; }
-  #s9 .dice .r{ position:absolute; left:50%; top:50%; width:420px; height:420px; border-radius:50%; border:2px solid rgba(18,242,128,0.5); animation:ring 3.2s ease-out infinite; }
-  #s9 .dice .r.b{ animation-delay:1.6s; }
-  #s9 .dice .core{ position:absolute; inset:70px; border-radius:60px; background:rgba(18,242,128,0.08); border:2px solid rgba(18,242,128,0.6); display:flex; align-items:center; justify-content:center; box-shadow:0 0 80px rgba(18,242,128,0.3); backdrop-filter:blur(8px); }
-  #s9 .dice svg{ width:150px; height:150px; stroke:var(--green); stroke-width:1.6; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .divider .dice{ position:absolute; right:190px; top:50%; transform:translateY(-50%); width:420px; height:420px; z-index:6; }
+  .divider .dice .r{ position:absolute; left:50%; top:50%; width:420px; height:420px; border-radius:50%; border:2px solid rgba(18,242,128,0.5); animation:ring 3.2s ease-out infinite; }
+  .divider .dice .r.b{ animation-delay:1.6s; }
+  .divider .dice .core{ position:absolute; inset:70px; border-radius:60px; background:rgba(18,242,128,0.08); border:2px solid rgba(18,242,128,0.6); display:flex; align-items:center; justify-content:center; box-shadow:0 0 80px rgba(18,242,128,0.3); backdrop-filter:blur(8px); }
+  .divider .dice svg{ width:150px; height:150px; stroke:var(--green); stroke-width:1.6; fill:none; stroke-linecap:round; stroke-linejoin:round; }
 
   /* ══ pasos del ejercicio ══ */
   .step-chip{ display:inline-flex; align-items:center; gap:14px; width:fit-content; }
@@ -398,14 +364,6 @@
   #s5 .io b{ width:auto; font-size:12px; }
   #s5 .arr svg{ width:24px; height:24px; }
 
-  #s7 .node.n1{ left:660px; width:290px; }
-  #s7 .node.n2{ left:1076px; width:290px; }
-  #s7 .node.n3{ left:1420px; width:262px; }
-  #s7 .node .d{ font-size:19px; }
-  #s7 .gate{ position:absolute; left:1013px; top:266px; transform:translate(-50%,-50%); width:128px; height:128px; border-radius:50%; background:#0b1410; border:2px solid var(--green); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; z-index:5; box-shadow:0 0 0 10px rgba(11,20,16,0.7), 0 0 46px rgba(18,242,128,0.45); }
-  #s7 .gate svg{ width:34px; height:34px; stroke:var(--green); stroke-width:2.8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
-  #s7 .gate span{ font-family:"Poppins",sans-serif; font-weight:700; font-size:14px; letter-spacing:0.1em; text-transform:uppercase; color:#fff; line-height:1.2; margin-top:2px; }
-  #s7 .rail.r2{ left:1221px; }
 
   #s8 .kit{ grid-template-columns:470px 1fr; }
   #s8 .hub{ padding:42px 40px; }
@@ -461,6 +419,91 @@
   #s8b .mid .x{ font-size:34px; }
   #s8b .strip{ margin-top:24px; }
   #s8b .strip span{ font-size:21px; }
+
+  /* ══ ajustes v1.3 · comentarios del visor ══ */
+  /* 02 · recorrido en tres tiempos */
+  #s2 .met{ grid-template-columns:repeat(3,1fr); gap:30px; margin-top:44px; }
+  #s2 .mcard{ padding:52px 44px 40px; }
+  #s2 .mbadge{ top:34px; right:34px; font-size:18px; padding:10px 22px; }
+  #s2 .mghost{ font-size:340px; right:-10px; bottom:-60px; }
+  #s2 .mnum{ font-size:84px; margin-bottom:22px; }
+  #s2 .mname{ font-size:52px; margin-bottom:20px; }
+  #s2 .mdesc{ font-size:31px; line-height:1.45; }
+  #s2 .mico svg{ width:130px; height:130px; }
+  #s2 .mcat{ font-size:20px; padding-top:22px; }
+
+  /* 04 · la pregunta */
+  #s3q h2{ font-size:150px; line-height:1.04; }
+  #s3q .dice .core b{ font-family:"Anta",sans-serif; font-weight:400; font-size:190px; line-height:1; color:var(--green); text-shadow:0 0 50px rgba(18,242,128,0.6); }
+
+  /* 06 · con qué trabaja cada agente */
+  #s5 .tools{ display:flex; flex-wrap:wrap; gap:6px; margin-top:12px; }
+  #s5 .tools span{ display:inline-flex; align-items:center; gap:7px; font-family:"Poppins",sans-serif; font-weight:600; font-size:13.5px; color:var(--near-black); background:#fff; border:1.5px solid rgba(21,23,22,0.16); border-radius:999px; padding:4px 11px 4px 9px; white-space:nowrap; }
+  #s5 .tools i{ width:9px; height:9px; border-radius:50%; display:block; background:var(--c); }
+  #s5 .ag .d{ font-size:16.5px; margin-top:12px; }
+  #s5 .io{ padding-top:12px; }
+
+  /* 07 · recomendación para el redactor */
+  #s6 .strip{ margin-top:22px; padding:20px 34px; }
+  #s6 .strip span{ font-size:24px; }
+  #s6 .face{ padding:30px 40px; }
+  #s6 .body{ padding:26px 34px; }
+  #s6 .body p{ font-size:28px; line-height:1.5; }
+  #s6 .body p + p{ margin-top:16px; }
+  #s6 .subj{ padding:16px 34px; }
+  #s6 .tells{ margin-top:20px; gap:12px; }
+
+  /* 09 · calma */
+  #sc .scrim{ background:
+     radial-gradient(circle at 22% 50%, rgba(18,242,128,0.16), transparent 44%),
+     linear-gradient(0deg, rgba(8,12,10,0.66), rgba(8,12,10,0.66)); }
+  #sc .calma{ flex:1; display:grid; grid-template-columns:minmax(0,1fr) 770px; gap:60px; align-items:center; min-height:0; }
+  #sc h2{ font-family:"Anta",sans-serif; font-size:206px; line-height:1; letter-spacing:0.02em; color:#fff; margin-top:34px; }
+  #sc h2 span{ color:var(--green); text-shadow:0 0 70px rgba(18,242,128,0.5); }
+  #sc .tagline{ font-family:"Tilt Neon",sans-serif; font-size:44px; line-height:1.3; color:rgba(255,255,255,0.72); margin-top:26px; max-width:820px; }
+  #sc .two{ display:flex; flex-direction:column; gap:26px; }
+  #sc .gc{ position:relative; display:flex; align-items:center; gap:36px; border-radius:26px; padding:38px 44px; background:rgba(255,255,255,0.05); backdrop-filter:blur(14px); border:1.5px solid rgba(255,255,255,0.2); box-shadow:0 22px 60px rgba(0,0,0,0.5); overflow:hidden; }
+  #sc .gc.hot{ background:rgba(18,242,128,0.08); border-color:rgba(18,242,128,0.6); box-shadow:0 22px 60px rgba(0,0,0,0.5), 0 0 50px rgba(18,242,128,0.2); }
+  #sc .gc .stat{ font-family:"Anta",sans-serif; font-size:210px; line-height:0.9; color:var(--green); text-shadow:0 0 60px rgba(18,242,128,0.55); flex-shrink:0; width:150px; text-align:center; }
+  #sc .gc .ic{ width:150px; height:150px; border-radius:36px; background:rgba(79,139,255,0.14); border:1.5px solid rgba(79,139,255,0.55); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+  #sc .gc .ic svg{ width:76px; height:76px; stroke:#7ea6ff; stroke-width:1.8; }
+  #sc .gc .k{ font-family:"Poppins",sans-serif; font-weight:700; font-size:18px; letter-spacing:0.16em; text-transform:uppercase; color:var(--green); }
+  #sc .gc:not(.hot) .k{ color:#7ea6ff; }
+  #sc .gc .n{ font-family:"Anta",sans-serif; font-size:42px; color:#fff; line-height:1.08; margin:6px 0 10px; }
+  #sc .gc .d{ font-family:"Poppins",sans-serif; font-size:25px; color:rgba(255,255,255,0.72); line-height:1.4; }
+
+  /* 13–16 · las conexiones, una por slide */
+  .cnx .cx{ flex:1; display:grid; grid-template-columns:600px 190px 1fr; margin-top:34px; min-height:0; }
+  .cnx .hero{ position:relative; border-radius:28px; padding:48px 48px 44px; background:linear-gradient(155deg,#0c2a1a,#0a120e); border:1.5px solid rgba(18,242,128,0.55); box-shadow:0 22px 70px rgba(9,86,44,0.32), inset 0 0 120px rgba(18,242,128,0.07); display:flex; flex-direction:column; overflow:hidden; }
+  .cnx .hero .ghost{ position:absolute; right:-6px; bottom:-70px; font-family:"Anta",sans-serif; font-size:380px; line-height:1; color:rgba(18,242,128,0.08); }
+  .cnx .lgs{ display:flex; gap:16px; }
+  .cnx .lg{ width:132px; height:132px; border-radius:32px; display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0; box-shadow:0 14px 40px rgba(0,0,0,0.4); }
+  .cnx .lg img{ width:100%; height:100%; object-fit:cover; }
+  .cnx .lg svg{ width:66px; height:66px; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+  .cnx .hero .n{ font-family:"Anta",sans-serif; font-size:92px; color:#fff; line-height:1; margin-top:40px; }
+  .cnx .hero .role{ width:fit-content; margin-top:20px; font-family:"Poppins",sans-serif; font-weight:700; font-size:19px; letter-spacing:0.12em; text-transform:uppercase; color:#06210f; background:var(--green); border-radius:999px; padding:9px 24px; box-shadow:0 0 26px rgba(18,242,128,0.5); }
+  .cnx .hero .d{ position:relative; font-family:"Poppins",sans-serif; font-weight:300; font-size:30px; color:rgba(255,255,255,0.84); line-height:1.45; margin-top:auto; }
+  .cnx .link{ position:relative; display:flex; align-items:center; justify-content:center; }
+  .cnx .link svg.w{ position:absolute; left:0; right:0; top:50%; width:100%; height:8px; overflow:visible; transform:translateY(-50%); }
+  .cnx .link svg.w path{ fill:none; stroke:#0f9d5a; stroke-width:4; stroke-dasharray:12 10; animation:dashflow 3s linear infinite; }
+  .cnx .link .plug{ position:relative; width:108px; height:108px; border-radius:50%; background:#0b110d; border:2px solid var(--green); display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 12px rgba(255,255,255,0.8), 0 0 50px rgba(18,242,128,0.45); }
+  .cnx .link .plug svg{ width:50px; height:50px; stroke:var(--green); stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .cnx .info{ display:flex; flex-direction:column; gap:22px; min-height:0; }
+  .cnx .blk{ position:relative; flex:1; background:#fff; border:1.5px solid rgba(9,86,44,0.12); border-radius:24px; padding:34px 40px; box-shadow:0 10px 36px rgba(9,40,24,0.08); display:flex; flex-direction:column; justify-content:center; overflow:hidden; }
+  .cnx .blk .bar{ position:absolute; top:0; left:0; right:0; height:6px; background:linear-gradient(135deg,#0f3bfe,#12f280); }
+  .cnx .blk .k{ font-family:"Poppins",sans-serif; font-weight:700; font-size:17px; letter-spacing:0.16em; text-transform:uppercase; color:var(--dark-green); }
+  .cnx .blk .t{ font-family:"Anta",sans-serif; font-size:42px; color:var(--near-black); line-height:1.15; margin-top:10px; }
+  .cnx .blk .t .g{ color:var(--dark-green); }
+  .cnx .blk .p{ font-family:"Poppins",sans-serif; font-size:25px; color:rgba(21,23,22,0.68); line-height:1.45; margin-top:12px; }
+  .cnx .who{ display:flex; flex-wrap:wrap; gap:12px; margin-top:16px; }
+  .cnx .who span{ font-family:"Poppins",sans-serif; font-weight:500; font-size:25px; color:#0b4a27; background:rgba(18,242,128,0.12); border:1.5px solid rgba(9,86,44,0.25); border-radius:14px; padding:11px 22px; }
+  .cnx .track{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:28px; }
+  .cnx .track div{ display:flex; align-items:center; gap:14px; border-radius:16px; padding:18px 26px; font-family:"Poppins",sans-serif; font-weight:600; font-size:23px; color:rgba(21,23,22,0.45); background:rgba(255,255,255,0.7); border:1.5px solid rgba(9,86,44,0.12); }
+  .cnx .track b{ font-family:"Anta",sans-serif; font-weight:400; font-size:22px; width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:rgba(9,86,44,0.08); color:rgba(21,23,22,0.45); flex-shrink:0; }
+  .cnx .track .done{ color:var(--dark-green); background:rgba(18,242,128,0.12); border-color:rgba(9,86,44,0.25); }
+  .cnx .track .done b{ background:var(--dark-green); color:#fff; }
+  .cnx .track .now{ color:#fff; background:linear-gradient(135deg,#0e1a14,#0a120e); border-color:rgba(18,242,128,0.6); box-shadow:0 10px 30px rgba(9,40,24,0.25); }
+  .cnx .track .now b{ background:var(--green); color:#06210f; box-shadow:0 0 22px rgba(18,242,128,0.6); }
 </style>
 </head>
 <body>
@@ -494,56 +537,39 @@
         <div class="mcard">
           <div class="mbar"></div><div class="mghost">1</div>
           <div class="mnum">01</div>
-          <div class="mname">La idea</div>
-          <div class="mdesc">Qué le toca a la IA y qué te toca a ti. Y qué es, de verdad, un agente.</div>
+          <div class="mname">La teoría</div>
+          <div class="mdesc">Qué es un agente y qué vamos a construir.</div>
           <div class="mico"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg></div>
-          <div class="mcat">Teoría</div>
+          <div class="mcat">Primero entendemos</div>
         </div>
         <div class="mcard">
           <div class="mbar"></div><div class="mghost">2</div>
-          <div class="mnum">02</div>
-          <div class="mname">El equipo</div>
-          <div class="mdesc">Un gerente y cinco especialistas: quién hace qué y qué se pasan entre ellos.</div>
-          <div class="mico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="12" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v9M12 12H5v4.5M12 12h7v4.5"/></svg></div>
-          <div class="mcat">Arquitectura</div>
-        </div>
-        <div class="mcard">
-          <div class="mbar"></div><div class="mghost">3</div>
-          <div class="mnum">03</div>
-          <div class="mname">El ecosistema</div>
-          <div class="mdesc">Cómo se conecta todo para que los mensajes salgan solos.</div>
-          <div class="mico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/><circle cx="12" cy="12" r="2.5"/></svg></div>
-          <div class="mcat">Automatización</div>
-        </div>
-        <div class="mcard">
-          <div class="mbar"></div><div class="mghost">4</div>
           <div class="mbadge b">Se juega</div>
-          <div class="mnum">04</div>
+          <div class="mnum">02</div>
           <div class="mname">El juego</div>
-          <div class="mdesc">Jugamos, y el juego decide el caso que vamos a trabajar.</div>
+          <div class="mdesc">Una dinámica sobre lo que vamos a construir.</div>
           <div class="mico"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1"/><circle cx="15.5" cy="15.5" r="1"/><circle cx="15.5" cy="8.5" r="1"/><circle cx="8.5" cy="15.5" r="1"/><circle cx="12" cy="12" r="1"/></svg></div>
-          <div class="mcat">Tú decides</div>
+          <div class="mcat">Después jugamos</div>
         </div>
         <div class="mcard hot">
-          <div class="mbar"></div><div class="mghost">5</div>
+          <div class="mbar"></div><div class="mghost">3</div>
           <div class="mbadge">En vivo</div>
-          <div class="mnum">05</div>
-          <div class="mname">Lo construimos</div>
-          <div class="mdesc">Buyer persona, equipo de agentes y conexión. Paso a paso, en mi pantalla.</div>
+          <div class="mnum">03</div>
+          <div class="mname">La práctica</div>
+          <div class="mdesc">Lo construimos paso a paso, en mi pantalla.</div>
           <div class="mico"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 1-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 0 0 5.4-5.4l-2 2-2-2 2-2z"/></svg></div>
-          <div class="mcat">Ejercicio</div>
+          <div class="mcat">Y nos vamos a la práctica</div>
         </div>
       </div>
-      <div class="strip"><b>La regla de hoy</b><span>primero te explico todo el sistema, después lo armamos. Así cuando lo veas construirse, <strong>ya sabes qué estás mirando.</strong></span></div>
     </div>
   </section>
 
-  <!-- ══ 03 · LA IA AL ESCRITORIO, TÚ AL TELÉFONO ══ -->
-  <section data-label="03 La IA al escritorio, tú al teléfono" id="s3" class="lightbg">
+  <!-- ══ 03 · EL PORQUÉ DE LA IA ══ -->
+  <section data-label="03 El porqué de la IA" id="s3" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">La idea que sostiene todo</div>
-      <div class="title-anta dark">La IA al escritorio. <span class="g">Tú al teléfono.</span></div>
+      <div class="title-anta dark">El <span class="g">porqué</span> de la IA</div>
       <div class="duo">
         <div class="side ia">
           <div class="bar"></div>
@@ -573,8 +599,23 @@
     </div>
   </section>
 
-  <!-- ══ 04 · QUÉ ES UN AGENTE ══ -->
-  <section data-label="04 Qué es un agente de IA" id="s4">
+  <!-- ══ 04 · LA PREGUNTA ══ -->
+  <section data-label="04 ¿Qué es un agente?" id="s3q" class="divider">
+    <div class="bg"></div>
+    <div class="scrim"></div>
+    <div class="content">
+      <div class="section-label"><span class="pulse"></span>La pregunta</div>
+      <h2>¿QUÉ ES UN<br><span>AGENTE</span>?</h2>
+      <div class="tagline">Y por qué no es lo mismo que un chat</div>
+    </div>
+    <div class="dice">
+      <span class="r"></span><span class="r b"></span>
+      <div class="core"><b>?</b></div>
+    </div>
+  </section>
+
+  <!-- ══ 05 · QUÉ ES UN AGENTE ══ -->
+  <section data-label="05 Qué es un agente de IA" id="s4">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="frame">
@@ -604,12 +645,12 @@
     </div>
   </section>
 
-  <!-- ══ 05 · EL EQUIPO QUE VAMOS A CONSTRUIR ══ -->
-  <section data-label="05 El equipo que vamos a construir" id="s5" class="lightbg">
+  <!-- ══ 06 · ECOSISTEMA DE AGENTE COMERCIAL ══ -->
+  <section data-label="06 Ecosistema de agente comercial" id="s5" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">El agente que vamos a construir</div>
-      <div class="title-anta dark">No es un agente. Es un <span class="g">equipo.</span></div>
+      <div class="title-anta dark">Ecosistema de <span class="g">agente comercial</span></div>
       <div class="map">
         <svg class="wires">
           <path d="M860 170 C 860 228, 160 212, 160 262"/>
@@ -627,6 +668,7 @@
             <div class="bar"></div><div class="ghost">1</div>
             <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></div><div class="n">Analista<br>de mercado</div></div>
             <div class="d">Investiga empresas en su web, noticias y LinkedIn. Confirma que cumplen y que hay señal de compra.</div>
+            <div class="tools"><span><i style="--c:#0f9d5a"></i>Agent Reach</span></div>
             <div class="io"><div class="in"><b>Recibe</b>El buyer persona</div><div class="out"><b>Entrega</b>Empresas calificadas y su decisor</div></div>
           </div>
           <div class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
@@ -634,6 +676,7 @@
             <div class="bar"></div><div class="ghost">2</div>
             <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg></div><div class="n">Extractor<br>en Apollo</div></div>
             <div class="d">Consigue el correo corporativo del decisor. Solo gasta créditos en los que ya calificaron.</div>
+            <div class="tools"><span><i style="--c:#d97757"></i>Claude</span><span><i style="--c:#f5b400"></i>Apollo</span></div>
             <div class="io"><div class="in"><b>Recibe</b>Empresa y decisor</div><div class="out"><b>Entrega</b>Correo verificado</div></div>
           </div>
           <div class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
@@ -641,6 +684,7 @@
             <div class="bar"></div><div class="ghost">3</div>
             <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div><div class="n">Redactor</div></div>
             <div class="d">Estudia al decisor y escribe correo, mensaje de LinkedIn y follow-up. Sin un dato real, no escribe.</div>
+            <div class="tools"><span><i style="--c:#d97757"></i>Claude</span><span><i style="--c:#188038"></i>Sheets</span></div>
             <div class="io"><div class="in"><b>Recibe</b>El lead y la señal encontrada</div><div class="out"><b>Entrega</b>Tres mensajes por persona</div></div>
           </div>
           <div class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
@@ -648,6 +692,7 @@
             <div class="bar"></div><div class="ghost">4</div>
             <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div class="n">Despachador</div></div>
             <div class="d">Revisa cada mensaje y arma la cola de envío. No envía nada: espera tu aprobación.</div>
+            <div class="tools"><span><i style="--c:#d97757"></i>Claude</span><span><i style="--c:#ea4b71"></i>n8n</span></div>
             <div class="io"><div class="in"><b>Recibe</b>Los mensajes listos</div><div class="out"><b>Entrega</b>Cola lista para que apruebes</div></div>
           </div>
           <div class="arr"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
@@ -655,6 +700,7 @@
             <div class="bar"></div><div class="ghost">5</div>
             <div class="top"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div><div class="n">Business analyst<br>de ejecuciones</div></div>
             <div class="d">Lee lo que respondieron, cruza qué funcionó y qué no, y se lo reporta al gerente.</div>
+            <div class="tools"><span><i style="--c:#d97757"></i>Claude</span><span><i style="--c:#188038"></i>Sheets</span></div>
             <div class="io"><div class="in"><b>Recibe</b>Las respuestas de la semana</div><div class="out"><b>Entrega</b>Tres recomendaciones</div></div>
           </div>
         </div>
@@ -663,8 +709,8 @@
     </div>
   </section>
 
-  <!-- ══ 06 · QUE NO APESTE A IA ══ -->
-  <section data-label="06 Que no apeste a IA" id="s6" class="lightbg">
+  <!-- ══ 07 · QUE NO APESTE A IA ══ -->
+  <section data-label="07 Que no apeste a IA" id="s6" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">El trabajo del redactor</div>
@@ -713,46 +759,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ══ 07 · EL ECOSISTEMA ══ -->
-  <section data-label="07 El ecosistema" id="s7" class="darkbg">
-    <div class="bg"></div>
-    <div class="scrim"></div>
-    <div class="stage">
-      <div class="eyebrow-chip on-dark"><span class="dot"></span>Cómo sale solo</div>
-      <div class="title-anta" style="margin-top:18px;">Agentes que <span class="g">deciden</span> + automatización que <span style="color:#7ea6ff">ejecuta</span></div>
-      <div class="eco">
-        <div class="zone a"><div class="zt">Agéntico<small>piensa y ajusta</small></div></div>
-        <div class="zone b"><div class="zt">Automatización tradicional<small>hace siempre lo mismo, sin fallar</small></div></div>
-        <span class="pulse"></span><span class="pulse p2"></span>
-        <div class="brain">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.5"/><path d="M12 3a4 4 0 0 0-4 4 4 4 0 0 0-2 7 4 4 0 0 0 4 5 4 4 0 0 0 8 0 4 4 0 0 0 4-5 4 4 0 0 0-2-7 4 4 0 0 0-4-4z"/></svg>
-          <div class="n">El cerebro</div><div class="d">tu equipo de agentes</div>
-        </div>
-        <div class="rail"><i></i>Vive en Claude Code</div>
-        <div class="node n1">
-          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></div>
-          <div class="n">Google Sheets</div><div class="d">El registro en tu Drive: cada lead y cada mensaje.</div>
-        </div>
-        <div class="gate"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Tú<br>apruebas</span></div>
-        <div class="node n2">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></div>
-          <div class="n">n8n</div><div class="d">Envía por Gmail, detecta respuestas y hace el follow-up.</div>
-        </div>
-        <div class="rail r2"><i></i>Vive en Railway · corre solo</div>
-        <div class="node n3">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-          <div class="n">Tu prospecto</div><div class="d">Recibe, abre, responde.</div>
-        </div>
-        <svg class="flow">
-          <path class="f" d="M410 266 L 656 266"/>
-          <path class="f" d="M1368 266 L 1416 266"/>
-          <path class="back" d="M1551 386 C 1551 620, 280 620, 280 474"/>
-        </svg>
-        <div class="loop"><b>Cada semana</b> el business analyst lee las respuestas y el gerente ajusta el plan</div>
-      </div>
+      <div class="strip"><b>Recomendación</b><span>al redactor démosle <strong>información humana en la que basarse.</strong></span></div>
     </div>
   </section>
 
@@ -806,8 +813,33 @@
     </div>
   </section>
 
-  <!-- ══ 09 · CUÁNTO CUESTA AL MES ══ -->
-  <section data-label="09 Cuánto cuesta al mes" id="s8b" class="lightbg">
+  <!-- ══ 09 · CALMA ══ -->
+  <section data-label="09 Calma" id="sc" class="darkbg">
+    <div class="bg"></div>
+    <div class="scrim"></div>
+    <div class="stage">
+      <div class="calma">
+        <div>
+          <div class="eyebrow-chip on-dark"><span class="dot"></span>Antes de seguir</div>
+          <h2>CAL<span>MA.</span></h2>
+          <div class="tagline">Se ve grande, pero no lo armamos pieza por pieza.</div>
+        </div>
+        <div class="two">
+          <div class="gc hot">
+            <div class="stat">3</div>
+            <div><div class="k">Lo que hace Claude</div><div class="n">Prompts generan todo el ecosistema</div><div class="d">El gerente, los especialistas y sus reglas salen de ahí.</div></div>
+          </div>
+          <div class="gc">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/></svg></div>
+            <div><div class="k">Lo que hacemos a mano</div><div class="n">Generar las conexiones</div><div class="d">Ese es el trabajo manual de hoy: conectar las herramientas.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 10 · CUÁNTO CUESTA AL MES ══ -->
+  <section data-label="10 Cuánto cuesta al mes" id="s8b" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">Prospectar, mes a mes</div>
@@ -819,9 +851,9 @@
           <div class="items">
             <div class="it">Claude <small>Plan Pro · USD 20</small><b>$64.000</b></div>
             <div class="it">Apollo <small>Plan Basic · USD 59</small><b>$189.000</b></div>
-            <div class="it">Railway <small>Plan Hobby · USD 5</small><b>$16.000</b></div>
+            <div class="it">Railway <small>USD 10 al mes</small><b>$32.000</b></div>
           </div>
-          <div class="tot"><div class="l">Total al mes</div><div class="v"><small>COP</small>269.000</div></div>
+          <div class="tot"><div class="l">Total al mes</div><div class="v"><small>COP</small>285.000</div></div>
         </div>
         <div class="others">
           <div class="pan hu">
@@ -841,8 +873,8 @@
     </div>
   </section>
 
-  <!-- ══ 10 · A JUGAR ══ -->
-  <section data-label="10 A jugar" id="s9" class="divider">
+  <!-- ══ 11 · A JUGAR ══ -->
+  <section data-label="11 A jugar" id="s9" class="divider">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="content">
@@ -856,8 +888,8 @@
     </div>
   </section>
 
-  <!-- ══ 10 · PASO 1 · BUYER PERSONA ══ -->
-  <section data-label="11 Paso 1 · Buyer persona" id="s10" class="lightbg">
+  <!-- ══ 12 · PASO 1 · BUYER PERSONA ══ -->
+  <section data-label="12 Paso 1 · Buyer persona" id="s10" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 1</span><span class="t">En vivo</span></div>
@@ -882,11 +914,119 @@
     </div>
   </section>
 
-  <!-- ══ 11 · PASO 2 · CONSTRUIMOS EL EQUIPO ══ -->
-  <section data-label="12 Paso 2 · Construimos el equipo" id="s11" class="lightbg">
+  <!-- ══ 13 · PASO 2 · CONEXIÓN 1 · CLAUDE ══ -->
+  <section data-label="13 Paso 2 · Conexión 1 · Claude" id="s10c1" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
-      <div class="step-chip"><span class="n">PASO 2</span><span class="t">En vivo</span></div>
+      <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 1 de 4</span></div>
+      <div class="title-anta dark" style="margin-top:16px;">Conectamos <span class="g">Claude</span></div>
+      <div class="cx">
+        <div class="hero">
+          <div class="ghost">1</div>
+          <div class="lgs"><div class="lg" style="background:rgba(217,119,87,0.16); border:1.5px solid rgba(217,119,87,0.45);"><img src="assets/logo-claude.svg" alt="Claude" style="width:78px; height:78px;"></div></div>
+          <div class="n">Claude</div>
+          <div class="role">El cerebro</div>
+          <div class="d">Claude Code: donde va a vivir el equipo. Todo lo demás se conecta aquí.</div>
+        </div>
+        <div class="link">
+          <svg class="w" viewBox="0 0 190 8" preserveAspectRatio="none"><path d="M0 4 L190 4"/></svg>
+          <div class="plug"><svg viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/></svg></div>
+        </div>
+        <div class="info">
+          <div class="blk"><div class="bar"></div><div class="k">Qué nos da</div><div class="t">Aquí vive <span class="g">todo el equipo</span></div><div class="p">Es el punto de partida: las otras tres conexiones llegan a Claude.</div></div>
+          <div class="blk"><div class="k">Quién lo usa</div><div class="who"><span>El gerente comercial</span><span>Los cinco especialistas</span></div></div>
+        </div>
+      </div>
+      <div class="track"><div class="now"><b>1</b>Claude</div><div><b>2</b>Apollo</div><div><b>3</b>Google</div><div><b>4</b>Railway</div></div>
+    </div>
+  </section>
+
+  <!-- ══ 14 · PASO 2 · CONEXIÓN 2 · APOLLO ══ -->
+  <section data-label="14 Paso 2 · Conexión 2 · Apollo" id="s10c2" class="lightbg cnx">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 2 de 4</span></div>
+      <div class="title-anta dark" style="margin-top:16px;">Conectamos <span class="g">Apollo</span></div>
+      <div class="cx">
+        <div class="hero">
+          <div class="ghost">2</div>
+          <div class="lgs"><div class="lg"><img src="assets/logo-apollo.png" alt="Apollo"></div></div>
+          <div class="n">Apollo</div>
+          <div class="role">La base de datos</div>
+          <div class="d">De ahí salen los correos corporativos de los decisores.</div>
+        </div>
+        <div class="link">
+          <svg class="w" viewBox="0 0 190 8" preserveAspectRatio="none"><path d="M0 4 L190 4"/></svg>
+          <div class="plug"><svg viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/></svg></div>
+        </div>
+        <div class="info">
+          <div class="blk"><div class="bar"></div><div class="k">Qué nos da</div><div class="t">El <span class="g">correo verificado</span> del decisor</div><div class="p">Solo gasta créditos en los que ya calificaron.</div></div>
+          <div class="blk"><div class="k">Quién lo usa</div><div class="who"><span>Extractor en Apollo</span></div></div>
+        </div>
+      </div>
+      <div class="track"><div class="done"><b>✓</b>Claude</div><div class="now"><b>2</b>Apollo</div><div><b>3</b>Google</div><div><b>4</b>Railway</div></div>
+    </div>
+  </section>
+
+  <!-- ══ 15 · PASO 2 · CONEXIÓN 3 · GOOGLE ══ -->
+  <section data-label="15 Paso 2 · Conexión 3 · Google" id="s10c3" class="lightbg cnx">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 3 de 4</span></div>
+      <div class="title-anta dark" style="margin-top:16px;">Conectamos <span class="g">Google</span></div>
+      <div class="cx">
+        <div class="hero">
+          <div class="ghost">3</div>
+          <div class="lgs"><div class="lg" style="background:#e6f4ea;"><svg viewBox="0 0 24 24" stroke="#188038"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></div><div class="lg" style="background:#fdecea;"><svg viewBox="0 0 24 24" stroke="#d93025"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg></div></div>
+          <div class="n">Google</div>
+          <div class="role">Registro y remitente</div>
+          <div class="d">Sheets guarda el registro en tu Drive. Gmail envía desde tu propia cuenta.</div>
+        </div>
+        <div class="link">
+          <svg class="w" viewBox="0 0 190 8" preserveAspectRatio="none"><path d="M0 4 L190 4"/></svg>
+          <div class="plug"><svg viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/></svg></div>
+        </div>
+        <div class="info">
+          <div class="blk"><div class="bar"></div><div class="k">Qué nos da</div><div class="t">Un solo <span class="g">registro</span> y tu <span class="g">remitente</span></div><div class="p">Ahí queda cada lead, cada mensaje y tu aprobación.</div></div>
+          <div class="blk"><div class="k">Quién lo usa</div><div class="who"><span>Redactor</span><span>Business analyst</span><span>n8n, para enviar</span></div></div>
+        </div>
+      </div>
+      <div class="track"><div class="done"><b>✓</b>Claude</div><div class="done"><b>✓</b>Apollo</div><div class="now"><b>3</b>Google</div><div><b>4</b>Railway</div></div>
+    </div>
+  </section>
+
+  <!-- ══ 16 · PASO 2 · CONEXIÓN 4 · RAILWAY ══ -->
+  <section data-label="16 Paso 2 · Conexión 4 · Railway" id="s10c4" class="lightbg cnx">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 4 de 4</span></div>
+      <div class="title-anta dark" style="margin-top:16px;">Conectamos <span class="g">Railway</span></div>
+      <div class="cx">
+        <div class="hero">
+          <div class="ghost">4</div>
+          <div class="lgs"><div class="lg" style="background:#13111c; border:1.5px solid rgba(255,255,255,0.2);"><svg viewBox="0 0 24 24" stroke="#fff"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01"/></svg></div></div>
+          <div class="n">Railway</div>
+          <div class="role">La casa de n8n</div>
+          <div class="d">Mantiene a n8n prendido en la nube, de día y de noche.</div>
+        </div>
+        <div class="link">
+          <svg class="w" viewBox="0 0 190 8" preserveAspectRatio="none"><path d="M0 4 L190 4"/></svg>
+          <div class="plug"><svg viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"/><path d="M6 8h12v4a6 6 0 0 1-12 0Z"/><path d="M12 18v4"/></svg></div>
+        </div>
+        <div class="info">
+          <div class="blk"><div class="bar"></div><div class="k">Qué nos da</div><div class="t">Los mensajes <span class="g">salen solos</span></div><div class="p">n8n envía, detecta quién respondió y hace el seguimiento, aunque tengas el computador apagado.</div></div>
+          <div class="blk"><div class="k">Quién lo usa</div><div class="who"><span>Despachador</span></div></div>
+        </div>
+      </div>
+      <div class="track"><div class="done"><b>✓</b>Claude</div><div class="done"><b>✓</b>Apollo</div><div class="done"><b>✓</b>Google</div><div class="now"><b>4</b>Railway</div></div>
+    </div>
+  </section>
+
+  <!-- ══ 17 · PASO 3 · CONSTRUIMOS EL EQUIPO ══ -->
+  <section data-label="17 Paso 3 · Construimos el equipo" id="s11" class="lightbg">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="step-chip"><span class="n">PASO 3</span><span class="t">En vivo</span></div>
       <div class="title-anta dark" style="margin-top:16px;">Le pedimos a Claude que <span class="g">arme el equipo</span></div>
       <div class="build">
         <div class="pdoc">
@@ -916,11 +1056,11 @@
     </div>
   </section>
 
-  <!-- ══ 12 · PASO 3 · LO SOLTAMOS A TRABAJAR ══ -->
-  <section data-label="13 Paso 3 · Lo soltamos a trabajar" id="s12" class="lightbg">
+  <!-- ══ 18 · PASO 4 · LO SOLTAMOS A TRABAJAR ══ -->
+  <section data-label="18 Paso 4 · Lo soltamos a trabajar" id="s12" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
-      <div class="step-chip"><span class="n">PASO 3</span><span class="t">En vivo</span></div>
+      <div class="step-chip"><span class="n">PASO 4</span><span class="t">En vivo</span></div>
       <div class="title-anta dark" style="margin-top:16px;">Y ahora lo <span class="g">soltamos a trabajar</span></div>
       <div class="fases">
         <div class="fcard">
@@ -954,8 +1094,8 @@
     </div>
   </section>
 
-  <!-- ══ 13 · LO QUE TE LLEVAS ══ -->
-  <section data-label="14 Lo que te llevas" id="s13">
+  <!-- ══ 19 · LO QUE TE LLEVAS ══ -->
+  <section data-label="19 Lo que te llevas" id="s13">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="wrap">
