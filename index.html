@@ -504,6 +504,19 @@
   .cnx .track .done b{ background:var(--dark-green); color:#fff; }
   .cnx .track .now{ color:#fff; background:linear-gradient(135deg,#0e1a14,#0a120e); border-color:rgba(18,242,128,0.6); box-shadow:0 10px 30px rgba(9,40,24,0.25); }
   .cnx .track .now b{ background:var(--green); color:#06210f; box-shadow:0 0 22px rgba(18,242,128,0.6); }
+  /* ══ cuándo se carga cada cosa / tokens (copiada de taller-ventas-ia, origen comatel/clase3) ══ */
+  .load-row { display:grid; grid-template-columns:290px 1fr 300px; align-items:center; gap:28px; background:#fff; border:1.5px solid rgba(9,86,44,0.12); border-radius:18px; padding:26px 34px; box-shadow:0 6px 24px rgba(9,40,24,0.05); margin-bottom:20px; }
+  .load-name { display:flex; align-items:center; gap:16px; font-family:"Anta",sans-serif; font-size:28px; color:var(--near-black); }
+  .load-track { height:16px; border-radius:9px; background:rgba(9,86,44,0.1); overflow:hidden; }
+  .load-fill { height:100%; border-radius:9px; background:linear-gradient(90deg,#0f9d5a,#12f280); }
+  .load-when { font-family:"Poppins",sans-serif; font-size:21px; color:rgba(21,23,22,0.66); line-height:1.35; }
+  .load-when b { color:var(--dark-green); }
+  .ej-tip { margin-top:24px; display:flex; align-items:center; gap:14px; background:linear-gradient(135deg,#0e1a14,#0a120e); border-radius:16px; padding:22px 34px; }
+  .ej-tip b { font-family:"Poppins",sans-serif; font-weight:800; font-size:16px; letter-spacing:0.12em; text-transform:uppercase; color:var(--green); flex-shrink:0; }
+  .ej-tip span { font-family:"Poppins",sans-serif; font-size:23px; color:rgba(255,255,255,0.9); }
+  /* divisor · nuestro ecosistema de agentes */
+  #s5d h2{ font-size:136px; line-height:1.04; }
+  #s5d .tagline{ font-size:64px; color:rgba(255,255,255,0.8); margin-top:18px; }
 </style>
 </head>
 <body>
@@ -645,8 +658,49 @@
     </div>
   </section>
 
-  <!-- ══ 06 · ECOSISTEMA DE AGENTE COMERCIAL ══ -->
-  <section data-label="06 Ecosistema de agente comercial" id="s5" class="lightbg">
+  <!-- ══ 06 · CUÁNDO SE CARGA CADA COSA ══ -->
+  <section data-label="06 Cuándo se carga cada cosa" id="s8t" class="lightbg">
+    <div class="bg"></div>
+    <div style="position:absolute; inset:0; padding:80px 120px; display:flex; flex-direction:column; justify-content:center;">
+      <div class="label-tag dark">"¿Y por qué no meto todo en el CLAUDE.md?"</div>
+      <div class="title-anta dark" style="font-size:58px; margin-bottom:38px;">Cada pieza se carga en <span style="color:var(--dark-green)">momentos distintos</span></div>
+
+      <div class="load-row">
+        <div class="load-name"><div class="icon-box" style="width:46px;height:46px;border-radius:12px;"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>CLAUDE.md</div>
+        <div class="load-track"><div class="load-fill" style="width:100%;"></div></div>
+        <div class="load-when"><b>Siempre</b>, al inicio de cada sesión.</div>
+      </div>
+      <div class="load-row">
+        <div class="load-name"><div class="icon-box" style="width:46px;height:46px;border-radius:12px;"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>Skills</div>
+        <div class="load-track"><div class="load-fill" style="width:42%;"></div></div>
+        <div class="load-when"><b>Solo cuando son relevantes</b> — por eso pueden ser largas sin costo.</div>
+      </div>
+      <div class="load-row">
+        <div class="load-name"><div class="icon-box" style="width:46px;height:46px;border-radius:12px;"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>Conectores MCP</div>
+        <div class="load-track"><div class="load-fill" style="width:28%;"></div></div>
+        <div class="load-when"><b>Cuando la tarea lo pide.</b></div>
+      </div>
+      <div class="ej-tip"><b>Por eso</b><span>Cada línea del CLAUDE.md se paga en <strong>tokens</strong> en <strong>cada</strong> sesión; las skills se pagan solo cuando se usan. Un CLAUDE.md gordo diluye lo que sí importa.</span></div>
+    </div>
+  </section>
+
+  <!-- ══ 07 · NUESTRO ECOSISTEMA DE AGENTES ══ -->
+  <section data-label="07 Nuestro ecosistema de agentes de IA" id="s5d" class="divider">
+    <div class="bg"></div>
+    <div class="scrim"></div>
+    <div class="content">
+      <div class="section-label"><span class="pulse"></span>Lo que vamos a construir</div>
+      <h2>NUESTRO<br>ECOSISTEMA<br>DE <span>AGENTES</span></h2>
+      <div class="tagline">de inteligencia artificial</div>
+    </div>
+    <div class="dice">
+      <span class="r"></span><span class="r b"></span>
+      <div class="core"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="12" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v9M12 12H5v4.5M12 12h7v4.5"/></svg></div>
+    </div>
+  </section>
+
+  <!-- ══ 08 · ECOSISTEMA DE AGENTE COMERCIAL ══ -->
+  <section data-label="08 Ecosistema de agente comercial" id="s5" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">El agente que vamos a construir</div>
@@ -709,8 +763,8 @@
     </div>
   </section>
 
-  <!-- ══ 07 · QUE NO APESTE A IA ══ -->
-  <section data-label="07 Que no apeste a IA" id="s6" class="lightbg">
+  <!-- ══ 09 · QUE NO APESTE A IA ══ -->
+  <section data-label="09 Que no apeste a IA" id="s6" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">El trabajo del redactor</div>
@@ -763,8 +817,8 @@
     </div>
   </section>
 
-  <!-- ══ 08 · LAS HERRAMIENTAS ══ -->
-  <section data-label="08 Las herramientas" id="s8" class="lightbg">
+  <!-- ══ 10 · LAS HERRAMIENTAS ══ -->
+  <section data-label="10 Las herramientas" id="s8" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">Con qué se arma</div>
@@ -813,8 +867,8 @@
     </div>
   </section>
 
-  <!-- ══ 09 · CALMA ══ -->
-  <section data-label="09 Calma" id="sc" class="darkbg">
+  <!-- ══ 11 · CALMA ══ -->
+  <section data-label="11 Calma" id="sc" class="darkbg">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="stage">
@@ -838,8 +892,8 @@
     </div>
   </section>
 
-  <!-- ══ 10 · CUÁNTO CUESTA AL MES ══ -->
-  <section data-label="10 Cuánto cuesta al mes" id="s8b" class="lightbg">
+  <!-- ══ 12 · CUÁNTO CUESTA AL MES ══ -->
+  <section data-label="12 Cuánto cuesta al mes" id="s8b" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">Prospectar, mes a mes</div>
@@ -873,8 +927,8 @@
     </div>
   </section>
 
-  <!-- ══ 11 · A JUGAR ══ -->
-  <section data-label="11 A jugar" id="s9" class="divider">
+  <!-- ══ 13 · A JUGAR ══ -->
+  <section data-label="13 A jugar" id="s9" class="divider">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="content">
@@ -888,8 +942,8 @@
     </div>
   </section>
 
-  <!-- ══ 12 · PASO 1 · BUYER PERSONA ══ -->
-  <section data-label="12 Paso 1 · Buyer persona" id="s10" class="lightbg">
+  <!-- ══ 14 · PASO 1 · BUYER PERSONA ══ -->
+  <section data-label="14 Paso 1 · Buyer persona" id="s10" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 1</span><span class="t">En vivo</span></div>
@@ -914,8 +968,8 @@
     </div>
   </section>
 
-  <!-- ══ 13 · PASO 2 · CONEXIÓN 1 · CLAUDE ══ -->
-  <section data-label="13 Paso 2 · Conexión 1 · Claude" id="s10c1" class="lightbg cnx">
+  <!-- ══ 15 · PASO 2 · CONEXIÓN 1 · CLAUDE ══ -->
+  <section data-label="15 Paso 2 · Conexión 1 · Claude" id="s10c1" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 1 de 4</span></div>
@@ -941,8 +995,8 @@
     </div>
   </section>
 
-  <!-- ══ 14 · PASO 2 · CONEXIÓN 2 · APOLLO ══ -->
-  <section data-label="14 Paso 2 · Conexión 2 · Apollo" id="s10c2" class="lightbg cnx">
+  <!-- ══ 16 · PASO 2 · CONEXIÓN 2 · APOLLO ══ -->
+  <section data-label="16 Paso 2 · Conexión 2 · Apollo" id="s10c2" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 2 de 4</span></div>
@@ -968,8 +1022,8 @@
     </div>
   </section>
 
-  <!-- ══ 15 · PASO 2 · CONEXIÓN 3 · GOOGLE ══ -->
-  <section data-label="15 Paso 2 · Conexión 3 · Google" id="s10c3" class="lightbg cnx">
+  <!-- ══ 17 · PASO 2 · CONEXIÓN 3 · GOOGLE ══ -->
+  <section data-label="17 Paso 2 · Conexión 3 · Google" id="s10c3" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 3 de 4</span></div>
@@ -995,8 +1049,8 @@
     </div>
   </section>
 
-  <!-- ══ 16 · PASO 2 · CONEXIÓN 4 · RAILWAY ══ -->
-  <section data-label="16 Paso 2 · Conexión 4 · Railway" id="s10c4" class="lightbg cnx">
+  <!-- ══ 18 · PASO 2 · CONEXIÓN 4 · RAILWAY ══ -->
+  <section data-label="18 Paso 2 · Conexión 4 · Railway" id="s10c4" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 4 de 4</span></div>
@@ -1022,8 +1076,8 @@
     </div>
   </section>
 
-  <!-- ══ 17 · PASO 3 · CONSTRUIMOS EL EQUIPO ══ -->
-  <section data-label="17 Paso 3 · Construimos el equipo" id="s11" class="lightbg">
+  <!-- ══ 19 · PASO 3 · CONSTRUIMOS EL EQUIPO ══ -->
+  <section data-label="19 Paso 3 · Construimos el equipo" id="s11" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 3</span><span class="t">En vivo</span></div>
@@ -1056,8 +1110,8 @@
     </div>
   </section>
 
-  <!-- ══ 18 · PASO 4 · LO SOLTAMOS A TRABAJAR ══ -->
-  <section data-label="18 Paso 4 · Lo soltamos a trabajar" id="s12" class="lightbg">
+  <!-- ══ 20 · PASO 4 · LO SOLTAMOS A TRABAJAR ══ -->
+  <section data-label="20 Paso 4 · Lo soltamos a trabajar" id="s12" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 4</span><span class="t">En vivo</span></div>
@@ -1094,8 +1148,8 @@
     </div>
   </section>
 
-  <!-- ══ 19 · LO QUE TE LLEVAS ══ -->
-  <section data-label="19 Lo que te llevas" id="s13">
+  <!-- ══ 21 · LO QUE TE LLEVAS ══ -->
+  <section data-label="21 Lo que te llevas" id="s13">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="wrap">
