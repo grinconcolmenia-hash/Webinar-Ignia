@@ -517,6 +517,52 @@
   /* divisor · nuestro ecosistema de agentes */
   #s5d h2{ font-size:136px; line-height:1.04; }
   #s5d .tagline{ font-size:64px; color:rgba(255,255,255,0.8); margin-top:18px; }
+  /* el prompt, sección por sección: fragmentos literales resaltados */
+  #s11p .doc{ flex:1; margin-top:26px; min-height:0; display:flex; flex-direction:column; background:#0f1613; border:1px solid rgba(18,242,128,0.25); border-radius:22px; overflow:hidden; box-shadow:0 22px 70px rgba(9,40,24,0.3); }
+  #s11p .chrome{ display:flex; align-items:center; gap:9px; padding:15px 22px; background:#161f1b; border-bottom:1px solid rgba(255,255,255,0.06); }
+  #s11p .chrome i{ width:14px; height:14px; border-radius:50%; display:block; }
+  #s11p .chrome i:nth-child(1){ background:#ff5f56; } #s11p .chrome i:nth-child(2){ background:#ffbd2e; } #s11p .chrome i:nth-child(3){ background:#27c93f; }
+  #s11p .chrome span{ margin-left:16px; font-family:ui-monospace,Consolas,monospace; font-size:18px; color:rgba(255,255,255,0.55); }
+  #s11p .chrome em{ margin-left:auto; font-style:normal; font-family:"Poppins",sans-serif; font-size:16px; color:rgba(255,255,255,0.6); }
+  #s11p .frags{ flex:1; display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(3,1fr); gap:14px; padding:18px; min-height:0; }
+  #s11p .fr{ position:relative; border-radius:14px; padding:16px 20px 14px 22px; display:flex; flex-direction:column; overflow:hidden;
+     background:color-mix(in srgb, var(--c) 15%, #0f1613); border:1.5px solid color-mix(in srgb, var(--c) 55%, transparent); border-left:7px solid var(--c); }
+  #s11p .fr .h{ font-family:ui-monospace,Consolas,monospace; font-weight:700; font-size:18px; letter-spacing:0.02em; color:var(--c); }
+  #s11p .fr .q{ font-family:ui-monospace,Consolas,monospace; font-size:17.5px; line-height:1.5; color:rgba(255,255,255,0.92); margin-top:8px; }
+  #s11p .fr .q s{ text-decoration:none; color:rgba(255,255,255,0.4); }
+  #s11p .fr .es{ margin-top:auto; padding-top:10px; display:flex; align-items:baseline; gap:10px; font-family:"Poppins",sans-serif; font-size:18.5px; line-height:1.3; color:#fff; }
+  #s11p .fr .es b{ flex-shrink:0; font-weight:700; font-size:12.5px; letter-spacing:0.12em; text-transform:uppercase; color:#08110c; background:var(--c); border-radius:999px; padding:4px 12px; }
+  /* qué es Agent Reach y a qué te conecta */
+  #sar .ar{ flex:1; display:grid; grid-template-columns:540px 110px 1fr; margin-top:32px; min-height:0; }
+  #sar .hero{ position:relative; border-radius:28px; padding:44px 44px 40px; background:linear-gradient(155deg,#0c2a1a,#0a120e); border:1.5px solid rgba(18,242,128,0.55); box-shadow:0 22px 70px rgba(9,86,44,0.32), inset 0 0 120px rgba(18,242,128,0.07); display:flex; flex-direction:column; overflow:hidden; }
+  #sar .hero .eye{ position:relative; width:150px; height:150px; flex-shrink:0; }
+  #sar .hero .eye span{ position:absolute; left:50%; top:50%; width:150px; height:150px; border-radius:50%; border:2px solid rgba(18,242,128,0.5); animation:ring 3.2s ease-out infinite; }
+  #sar .hero .eye span.b{ animation-delay:1.6s; }
+  #sar .hero .eye div{ position:absolute; inset:12px; border-radius:36px; background:#0b1410; border:1.5px solid rgba(18,242,128,0.6); display:flex; align-items:center; justify-content:center; box-shadow:0 0 50px rgba(18,242,128,0.3); }
+  #sar .hero .eye svg{ width:66px; height:66px; stroke:var(--green); stroke-width:1.8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  #sar .hero .n{ font-family:"Anta",sans-serif; font-size:70px; color:#fff; line-height:1; margin-top:30px; }
+  #sar .hero .role{ width:fit-content; margin-top:18px; font-family:"Poppins",sans-serif; font-weight:700; font-size:18px; letter-spacing:0.12em; text-transform:uppercase; color:#06210f; background:var(--green); border-radius:999px; padding:8px 22px; box-shadow:0 0 26px rgba(18,242,128,0.5); }
+  #sar .hero .d{ font-family:"Poppins",sans-serif; font-weight:300; font-size:29px; color:rgba(255,255,255,0.86); line-height:1.42; margin-top:26px; }
+  #sar .hero .d b{ color:var(--green); font-weight:500; }
+  #sar .hero .who{ margin-top:auto; }
+  #sar .hero .who small{ display:block; font-family:"Poppins",sans-serif; font-weight:700; font-size:15px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.55); margin-bottom:10px; }
+  #sar .hero .who span{ display:inline-block; font-family:"Poppins",sans-serif; font-weight:500; font-size:21px; color:#eafff4; background:rgba(18,242,128,0.12); border:1.5px solid rgba(18,242,128,0.5); border-radius:12px; padding:8px 16px; margin-right:8px; }
+  #sar .link{ position:relative; display:flex; align-items:center; justify-content:center; }
+  #sar .link svg{ width:100%; height:100%; overflow:visible; }
+  #sar .link path{ fill:none; stroke:#0f9d5a; stroke-width:3.5; vector-effect:non-scaling-stroke; stroke-dasharray:11 9; animation:dashflow 3s linear infinite; }
+  #sar .chs{ display:grid; grid-template-columns:repeat(4,1fr); grid-template-rows:1fr 1fr; gap:18px; min-height:0; }
+  #sar .ch{ position:relative; background:#fff; border:1.5px solid rgba(9,86,44,0.12); border-radius:22px; padding:28px 24px 22px; box-shadow:0 8px 30px rgba(9,40,24,0.07); display:flex; flex-direction:column; overflow:hidden; }
+  #sar .ch .bar{ position:absolute; top:0; left:0; right:0; height:6px; background:linear-gradient(135deg,#0f3bfe,#12f280); }
+  #sar .ch .ic{ width:68px; height:68px; border-radius:18px; display:flex; align-items:center; justify-content:center; background:var(--bg); flex-shrink:0; }
+  #sar .ch .ic svg{ width:36px; height:36px; stroke:var(--fg); stroke-width:2; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  #sar .ch .n{ font-family:"Anta",sans-serif; font-size:30px; color:var(--near-black); line-height:1.08; margin-top:20px; }
+  #sar .ch .d{ font-family:"Poppins",sans-serif; font-size:20px; color:rgba(21,23,22,0.66); line-height:1.4; margin-top:10px; }
+  #sar .ch .tg{ margin-top:auto; width:fit-content; font-family:"Poppins",sans-serif; font-weight:600; font-size:14px; letter-spacing:0.08em; text-transform:uppercase; border-radius:999px; padding:5px 13px; color:var(--dark-green); background:rgba(18,242,128,0.14); border:1px solid rgba(9,86,44,0.2); }
+  #sar .ch .tg.ses{ color:var(--blue); background:rgba(15,59,254,0.07); border-color:rgba(15,59,254,0.25); }
+  #sar .ch.rule{ background:var(--near-black); border-color:rgba(18,242,128,0.55); box-shadow:0 18px 50px rgba(9,40,24,0.28); justify-content:center; }
+  #sar .ch.rule .ic{ background:rgba(18,242,128,0.12); border:1.5px solid rgba(18,242,128,0.55); }
+  #sar .ch.rule .n{ color:#fff; }
+  #sar .ch.rule .d{ color:rgba(255,255,255,0.75); }
 </style>
 </head>
 <body>
@@ -867,8 +913,37 @@
     </div>
   </section>
 
-  <!-- ══ 11 · CALMA ══ -->
-  <section data-label="11 Calma" id="sc" class="darkbg">
+  <!-- ══ 11 · QUÉ ES AGENT REACH ══ -->
+  <section data-label="11 Qué es Agent Reach" id="sar" class="lightbg">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="label-tag dark">Los ojos del equipo</div>
+      <div class="title-anta dark">¿Qué es <span class="g">Agent Reach</span> y a qué te conecta?</div>
+      <div class="ar">
+        <div class="hero">
+          <div class="eye"><span></span><span class="b"></span><div><svg viewBox="0 0 24 24"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12Z"/><circle cx="12" cy="12" r="3"/></svg></div></div>
+          <div class="n">Agent Reach</div>
+          <div class="role">Los ojos</div>
+          <div class="d">La <b>capa de lectura de internet</b> para los agentes. Con ella pueden investigar por su cuenta.</div>
+          <div class="who"><small>Lo usan</small><span>Analista de mercado</span><span>Redactor</span></div>
+        </div>
+        <div class="link"><svg viewBox="0 0 110 100" preserveAspectRatio="none"><path d="M0 50 C 55 50, 55 22, 110 22"/><path d="M0 50 C 55 50, 55 78, 110 78"/></svg></div>
+        <div class="chs">
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#e9f1ff; --fg:#0f3bfe"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg></div><div class="n">Páginas web</div><div class="d">La web de la empresa y cualquier URL.</div><div class="tg">Sin sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#e6f4ea; --fg:#188038"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg></div><div class="n">Búsqueda web</div><div class="d">Descubre empresas y noticias en toda la web.</div><div class="tg">Sin sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#e3f0fb; --fg:#0a66c2"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-4a2 2 0 0 1 4 0v4M12 11v6"/></svg></div><div class="n">LinkedIn</div><div class="d">Perfiles de decisores y páginas de empresa.</div><div class="tg ses">Con tu sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#fdeaf3; --fg:#d6249f"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></div><div class="n">Instagram</div><div class="d">Solo si tu sector vende por ese canal.</div><div class="tg ses">Con tu sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#e7f0ff; --fg:#1877f2"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div><div class="n">Facebook</div><div class="d">Solo si tu sector vende por ese canal.</div><div class="tg ses">Con tu sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#fdecea; --fg:#d93025"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></div><div class="n">YouTube</div><div class="d">Lo que se publica en video.</div><div class="tg">Sin sesión</div></div>
+          <div class="ch"><div class="bar"></div><div class="ic" style="--bg:#fff1e0; --fg:#e8710a"><svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></svg></div><div class="n">RSS</div><div class="d">Las novedades de blogs y medios.</div><div class="tg">Sin sesión</div></div>
+          <div class="ch rule"><div class="ic"><svg viewBox="0 0 24 24" style="stroke:var(--green)"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><div class="n">Solo lee</div><div class="d">Nunca da like, comenta, sigue ni envía mensajes.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 12 · CALMA ══ -->
+  <section data-label="12 Calma" id="sc" class="darkbg">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="stage">
@@ -892,8 +967,8 @@
     </div>
   </section>
 
-  <!-- ══ 12 · CUÁNTO CUESTA AL MES ══ -->
-  <section data-label="12 Cuánto cuesta al mes" id="s8b" class="lightbg">
+  <!-- ══ 13 · CUÁNTO CUESTA AL MES ══ -->
+  <section data-label="13 Cuánto cuesta al mes" id="s8b" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="label-tag dark">Prospectar, mes a mes</div>
@@ -927,8 +1002,8 @@
     </div>
   </section>
 
-  <!-- ══ 13 · A JUGAR ══ -->
-  <section data-label="13 A jugar" id="s9" class="divider">
+  <!-- ══ 14 · A JUGAR ══ -->
+  <section data-label="14 A jugar" id="s9" class="divider">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="content">
@@ -942,8 +1017,8 @@
     </div>
   </section>
 
-  <!-- ══ 14 · PASO 1 · BUYER PERSONA ══ -->
-  <section data-label="14 Paso 1 · Buyer persona" id="s10" class="lightbg">
+  <!-- ══ 15 · PASO 1 · BUYER PERSONA ══ -->
+  <section data-label="15 Paso 1 · Buyer persona" id="s10" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 1</span><span class="t">En vivo</span></div>
@@ -968,8 +1043,8 @@
     </div>
   </section>
 
-  <!-- ══ 15 · PASO 2 · CONEXIÓN 1 · CLAUDE ══ -->
-  <section data-label="15 Paso 2 · Conexión 1 · Claude" id="s10c1" class="lightbg cnx">
+  <!-- ══ 16 · PASO 2 · CONEXIÓN 1 · CLAUDE ══ -->
+  <section data-label="16 Paso 2 · Conexión 1 · Claude" id="s10c1" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 1 de 4</span></div>
@@ -995,8 +1070,8 @@
     </div>
   </section>
 
-  <!-- ══ 16 · PASO 2 · CONEXIÓN 2 · APOLLO ══ -->
-  <section data-label="16 Paso 2 · Conexión 2 · Apollo" id="s10c2" class="lightbg cnx">
+  <!-- ══ 17 · PASO 2 · CONEXIÓN 2 · APOLLO ══ -->
+  <section data-label="17 Paso 2 · Conexión 2 · Apollo" id="s10c2" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 2 de 4</span></div>
@@ -1022,8 +1097,8 @@
     </div>
   </section>
 
-  <!-- ══ 17 · PASO 2 · CONEXIÓN 3 · GOOGLE ══ -->
-  <section data-label="17 Paso 2 · Conexión 3 · Google" id="s10c3" class="lightbg cnx">
+  <!-- ══ 18 · PASO 2 · CONEXIÓN 3 · GOOGLE ══ -->
+  <section data-label="18 Paso 2 · Conexión 3 · Google" id="s10c3" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 3 de 4</span></div>
@@ -1049,8 +1124,8 @@
     </div>
   </section>
 
-  <!-- ══ 18 · PASO 2 · CONEXIÓN 4 · RAILWAY ══ -->
-  <section data-label="18 Paso 2 · Conexión 4 · Railway" id="s10c4" class="lightbg cnx">
+  <!-- ══ 19 · PASO 2 · CONEXIÓN 4 · RAILWAY ══ -->
+  <section data-label="19 Paso 2 · Conexión 4 · Railway" id="s10c4" class="lightbg cnx">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 2</span><span class="t">Conexión 4 de 4</span></div>
@@ -1076,8 +1151,8 @@
     </div>
   </section>
 
-  <!-- ══ 19 · PASO 3 · CONSTRUIMOS EL EQUIPO ══ -->
-  <section data-label="19 Paso 3 · Construimos el equipo" id="s11" class="lightbg">
+  <!-- ══ 20 · PASO 3 · CONSTRUIMOS EL EQUIPO ══ -->
+  <section data-label="20 Paso 3 · Construimos el equipo" id="s11" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 3</span><span class="t">En vivo</span></div>
@@ -1110,8 +1185,31 @@
     </div>
   </section>
 
-  <!-- ══ 20 · PASO 4 · LO SOLTAMOS A TRABAJAR ══ -->
-  <section data-label="20 Paso 4 · Lo soltamos a trabajar" id="s12" class="lightbg">
+  <!-- ══ 21 · PASO 3 · EL PROMPT POR SECCIONES ══ -->
+  <section data-label="21 Paso 3 · El prompt por secciones" id="s11p" class="lightbg">
+    <div class="bg"></div>
+    <div class="stage">
+      <div class="step-chip"><span class="n">PASO 3</span><span class="t">El prompt por dentro</span></div>
+      <div class="title-anta dark" style="margin-top:16px;">Nuestro prompt, <span class="g">sección por sección</span></div>
+      <div class="doc">
+        <div class="chrome"><i></i><i></i><i></i><span>prompt · equipo de prospección</span><em>9 secciones · fragmentos tal cual están escritos</em></div>
+        <div class="frags">
+          <div class="fr" style="--c:#12f280"><div class="h">0. CONTEXTO PARA EL AGENTE DE PROSPECCIÓN</div><div class="q">Pega aquí el bloque que entregó el prompt de ICP. No construyas nada si está vacío.</div><div class="es"><b>Qué es</b>Tu buyer persona. Lo único que pegas tú.</div></div>
+          <div class="fr" style="--c:#7ea6ff"><div class="h">1. TU MISIÓN</div><div class="q">Eres un arquitecto de sistemas de agentes comerciales. Vas a construir <s>[…]</s> un equipo de prospección en frío para la empresa descrita en la sección 0.</div><div class="es"><b>Qué es</b>El rol que toma Claude y el encargo.</div></div>
+          <div class="fr" style="--c:#10e6c4"><div class="h">2. STACK Y VERIFICACIÓN PREVIA</div><div class="q">Antes de construir, verifica y repórtame en una tabla qué está conectado y qué falta <s>[…]</s> Si falta algo, dime exactamente qué conectar y espera.</div><div class="es"><b>Qué es</b>Las herramientas, y revisar que estén conectadas.</div></div>
+          <div class="fr" style="--c:#ffd88a"><div class="h">3. ESTRUCTURA DEL PROYECTO</div><div class="q">Cada agente lleva frontmatter (name, description, tools, model) y solo las herramientas que necesita.</div><div class="es"><b>Qué es</b>Las carpetas y archivos que debe crear.</div></div>
+          <div class="fr" style="--c:#ff8fab"><div class="h">4. EL EQUIPO</div><div class="q">Es el único agente con el que habla el usuario. <s>[…]</s> Propone el plan (segmento, cargo, ciudad, volumen) y NO avanza hasta que el usuario confirme.</div><div class="es"><b>Qué es</b>Qué hace cada uno de los seis agentes.</div></div>
+          <div class="fr" style="--c:#c4a7ff"><div class="h">5. CARPETA EN DRIVE Y GOOGLE SHEET</div><div class="q">Estados válidos, en este orden: INVESTIGADO -> ENRIQUECIDO -> MENSAJE_LISTO -> ENVIADO <s>[…]</s></div><div class="es"><b>Qué es</b>El registro central donde queda cada lead.</div></div>
+          <div class="fr" style="--c:#ff9f6b"><div class="h">6. WORKFLOWS EN N8N</div><div class="q">WF1 Envío: <s>[…]</s> leer filas con Aprobado = SÍ y Estado = MENSAJE_LISTO <s>[…]</s> -> Gmail enviar</div><div class="es"><b>Qué es</b>Los tres flujos que envían y hacen seguimiento.</div></div>
+          <div class="fr" style="--c:#6fd3ff"><div class="h">7. ORDEN DE CONSTRUCCIÓN</div><div class="q">Trabaja por fases y detente al final de cada una para que yo confirme</div><div class="es"><b>Qué es</b>El ritmo: paso a paso, con tu sí.</div></div>
+          <div class="fr" style="--c:#12f280"><div class="h">8. REGLAS GLOBALES</div><div class="q">Ningún correo sale sin que el usuario marque APROBADO = SÍ. Ningún dato inventado. Lo que no se encuentra se marca N/D.</div><div class="es"><b>Qué es</b>Los límites que ningún agente se salta.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 22 · PASO 4 · LO SOLTAMOS A TRABAJAR ══ -->
+  <section data-label="22 Paso 4 · Lo soltamos a trabajar" id="s12" class="lightbg">
     <div class="bg"></div>
     <div class="stage">
       <div class="step-chip"><span class="n">PASO 4</span><span class="t">En vivo</span></div>
@@ -1148,8 +1246,8 @@
     </div>
   </section>
 
-  <!-- ══ 21 · LO QUE TE LLEVAS ══ -->
-  <section data-label="21 Lo que te llevas" id="s13">
+  <!-- ══ 23 · LO QUE TE LLEVAS ══ -->
+  <section data-label="23 Lo que te llevas" id="s13">
     <div class="bg"></div>
     <div class="scrim"></div>
     <div class="wrap">
